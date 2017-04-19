@@ -133,7 +133,7 @@ public class ServerForm extends javax.swing.JFrame implements ConsoleServeur{
         port = Integer.parseInt(TF_port.getText());
         ServerThread threadServeur = new ServerThread(port, new ListeTaches(), this);
         // thread qui lancera les threads clients
-        threadServeur.start();
+        threadServeur.start();   
     }//GEN-LAST:event_B_connectActionPerformed
 
     private void TF_portActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_portActionPerformed

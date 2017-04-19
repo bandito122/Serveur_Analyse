@@ -40,7 +40,8 @@ public class ClientThread extends Thread
             System.out.println(Thread.currentThread().getName()+" Start. Command = "+command);
             IRequest req = null; // interface
             Socket CSocket = null;
-            try {        
+            try 
+            {        
                 //tente de trouver du travail dans sa source de tâches
                 CSocket = tachesAExecuter.getTache(); 
             } catch (InterruptedException ex) {

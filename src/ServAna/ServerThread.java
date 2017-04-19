@@ -47,7 +47,7 @@ public class ServerThread extends Thread
             System.err.println("Erreur de port d'écoute ! ? [" + e + "]"); 
             System.exit(1);
         }
-       
+       //lancement des threads clients
         //Integer port_DISMAP = Integer.valueOf(FichierConfig.getProperty("DISMAP").toString());
 
  
@@ -76,4 +76,5 @@ public class ServerThread extends Thread
         
 
     }
+    
 }
